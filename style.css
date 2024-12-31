@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  background-color: #85b5cc;
+  font-family: "Dancing Script", serif;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Laptop {
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+ul {
+  display: flex;
+  gap: 3rem;
+}
+li {
+  justify-content: space-between;
+  display: flex;
+}
+li a {
+  color: white;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.Mobile {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  ul {
+    gap: 0.5rem;
+  }
+  li {
+    display: flex;
+  }
+  li a {
+    color: white;
+    font-weight: 900;
+    font-size: 0.6rem;
+  }
+  .Laptop {
+    display: none;
+  }
+  .Mobile {
+    display: block;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+header img,
+nav img {
+  width: 14rem;
+  text-shadow: 1px 2px 2px black;
+}
+@media screen and (max-width: 767px) {
+  header img,
+  nav img {
+    width: 10rem;
+    text-shadow: 1px 2px 2px black;
+  }
+}
+main {
+  text-align: center;
+}
+main h1 {
+  text-align: center;
+  font-size: 8.2rem;
+  margin-bottom: 0;
+  letter-spacing: 20px;
+  font-family: "Open Sans", serif;
+}
+main button {
+  padding: 15px 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 800;
+  font-size: 1.5rem;
+  background-color: #ccf2ae;
+  box-shadow: 1px 1px 2px black;
+  font-family: "Dancing Script", serif;
+}
+main img {
+  position: absolute;
+  width: 16rem;
+  top: 5rem;
+  animation: 5s infinite Jo;
+  left: 38rem;
+  transition: all ease-in-out 0.3s;
+}
+main b {
+  font-size: 1.9rem;
+}
+@media screen and (max-width: 767px) {
+  main img {
+    position: absolute;
+    width: 10rem;
+    top: 15.4rem;
+    left: 8.2rem;
+    animation: 5s infinite Jo;
+  }
+  /* .Zi {
+    animation: 5s infinite Zi;
+  } */
+  main h1 {
+    text-align: center;
+    font-size: 5.5rem;
+    font-family: "Open Sans", serif;
+    letter-spacing: 13px;
+    text-shadow: 1px 2px 2px salmon;
+  }
+  main b {
+    font-size: 1.3rem;
+  }
+}
+
+@keyframes Jo {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes Zi {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
